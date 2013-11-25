@@ -1,2 +1,2 @@
-// Hendrix.SongsController = Ember.ArrayController.extend({
-// });
+Hendrix.SongsController = Ember.ArrayController.extend({
+});
