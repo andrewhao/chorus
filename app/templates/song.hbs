@@ -1,3 +1,8 @@
-<h2>{{title}}</h2>
-<h3>Data:</h3>
-<pre>{{rawData}}</pre>
+<div class="song">
+  <h2>{{title}}</h2>
+  <h3>Data:</h3>
+  <pre>{{rawData}}</pre>
+  <button {{action "edit"}}>Edit</button>
+</div>
+
+{{outlet}}
