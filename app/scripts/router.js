@@ -3,5 +3,6 @@ Hendrix.Router.map(function() {
     this.resource("song", {path: '/:song_id'}, function() {
       this.route('edit');
     });
+    this.route('create');
   });
 });
