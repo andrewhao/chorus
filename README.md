@@ -1,4 +1,6 @@
-parsechord
-==========
+Hendrix
+=======
 
-Parses chord sheets from the interwebs so you can transpose, re-generate, and prettify them.
+Keep those tabs and chords handy, organized, and purty.
+
+![Work in progress](http://i.imgur.com/4l3IjZu.png)
