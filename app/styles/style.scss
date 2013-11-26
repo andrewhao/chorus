@@ -4,3 +4,20 @@
 html, body {
     margin: 30px 0;
 }
+
+
+#edit-song {
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  input, textarea {
+    width: 100%;
+    padding: .5em;
+    margin: 5px 0;
+  }
+
+  textarea {
+    height: 10em;
+  }
+}

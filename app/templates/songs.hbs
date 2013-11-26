@@ -1,6 +1,13 @@
-{{#each song in controller}}
-  <dt>Title:</dt>
-  <dd>{{#link-to "song" song}}{{song.title}}{{/link-to}}</dd>
-{{/each}}
+{{#link-to "songs.create" class="btn btn-primary create-btn"}} Add song {{/link-to}}
 
-{{outlet}}
+<div class="row">
+  <div class="col-sm-3">
+    {{#each song in controller}}
+      <p>{{#link-to "song" song}}{{song.title}}{{/link-to}}</p>
+    {{/each}}
+  </div>
+
+  <div class="col-sm-9">
+    {{outlet}}
+  </div>
+</div>
