@@ -1,20 +1,18 @@
-Hendrix.SongController = Ember.ObjectController.extend({
+Hendrix.SetController = Ember.ObjectController.extend({
   actions: {
     edit: function() {
-      this.transitionToRoute('song.edit');
+      this.transitionToRoute('set.edit');
     },
     delete: function() {
       // this tells Ember-Data to delete the current user
       this.get('model').deleteRecord();
       this.get('model').save();
       // then transition to the users route
-      this.transitionToRoute('songs');
+      this.transitionToRoute('sets');
     }
   },
 
-  text: function() {
-    var data = this.get('rawData');
-
-    return data;
-  }.property("model.rawData")
+  songs: function() {
+    return this.store.find('song');
+  }.property("@each.songs")
 });
