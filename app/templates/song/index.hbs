@@ -1,4 +1,7 @@
 <div class="song" {{bind-attr data-key=key}}>
-  <h2>{{title}}</h2>
+  <div class="hgroup clearfix">
+    <h2>{{title}}</h2>
+    <h3>{{key}}</h3>
+  </div>
   <pre class="raw-chord-text" {{bind-attr data-key=key}}>{{text}}</pre>
 </div>

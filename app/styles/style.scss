@@ -14,6 +14,23 @@ html, body {
     }
   }
 }
+div.hgroup {
+  clear: both;
+  h2 {
+    float: left
+  }
+  h3 {
+    float: right;
+  }
+}
+pre {
+  background-color: #FFF;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: #FAFAFA;
+    border: 1px solid #EEE;
+  }
+}
 
 #edit-song {
   label {
@@ -27,6 +44,8 @@ html, body {
   }
 
   textarea {
-    height: 10em;
+    height: 50em;
+    width: 100%;
+    font-family: monospace;
   }
 }

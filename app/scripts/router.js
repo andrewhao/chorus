@@ -4,6 +4,7 @@ Hendrix.Router.map(function() {
       this.route('edit');
       this.route('lyrics');
     });
+    this.route('detail');
     this.route('create');
   });
   this.resource("sets", function() {
