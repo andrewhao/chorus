@@ -1,6 +1,4 @@
-<div class="song" {{bind-attr key=key}}>
+<div class="song" {{bind-attr "data-key"=key}}>
   <h2>{{title}}</h2>
-  <pre>{{text}}</pre>
-  <button {{action "edit"}}>Edit</button>
-  <button {{action "delete"}}>Delete</button>
+  <pre class="raw-chord-text" {{bind-attr data-key=key}}>{{text}}</pre>
 </div>
