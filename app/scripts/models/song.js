@@ -3,6 +3,11 @@ Hendrix.Song = DS.Model.extend({
   key: DS.attr(),
   rawData: DS.attr(),
 
+  // a song can belong to multiple sets
+  sets: DS.hasMany('set', {
+    async: true
+  }),
+
   _parser: function() {
     return new Chordmeister.Parser(this.get('rawData'));
   },
@@ -18,10 +23,18 @@ Hendrix.Song.FIXTURES = [{
   id: 1,
   title: "The Star Spangled Banner",
   key: "G",
-  rawData: "G A C D\nOh say can you see"
+  rawData: "G A C D\nOh say can you see",
+  sets: [1]
 }, {
   id: 2,
   title: "Little Wing",
   key: "G",
-  rawData: "G A C D\nOohooooOoooooh"
+  rawData: "G A C D\nOohooooOoooooh",
+  sets: [1]
+}, {
+  id: 3,
+  title: "American Idiot",
+  key: "G",
+  rawData: "G A C D\nDon't wanna be an American idiot!",
+  sets: []
 }];

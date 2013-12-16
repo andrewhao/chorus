@@ -3,10 +3,12 @@ Hendrix.Router.map(function() {
     this.resource("song", {path: '/:song_id'}, function() {
       this.route('edit');
       this.route('lyrics');
+      this.resource("sets");
     });
     this.route('detail');
     this.route('create');
   });
+
   this.resource("sets", function() {
     this.resource("set", {path: '/:set_id'}, function() {
       this.route('edit');

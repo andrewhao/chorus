@@ -1,4 +1,6 @@
-var Hendrix = window.Hendrix = Ember.Application.create();
+var Hendrix = window.Hendrix = Ember.Application.create({
+  LOG_TRANSITIONS: true,
+});
 
 /* Order and include as you please. */
 require('scripts/controllers/*');

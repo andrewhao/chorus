@@ -10,9 +10,5 @@ Hendrix.SetController = Ember.ObjectController.extend({
       // then transition to the users route
       this.transitionToRoute('sets');
     }
-  },
-
-  songs: function() {
-    return this.store.find('song');
-  }.property("@each.songs")
+  }
 });
