@@ -4,7 +4,7 @@ Hendrix.Song = DS.Model.extend({
   rawData: DS.attr(),
 
   // a song can belong to multiple sets
-  sets: DS.hasMany('setList', {
+  setLists: DS.hasMany('setList', {
     async: true
   }),
 

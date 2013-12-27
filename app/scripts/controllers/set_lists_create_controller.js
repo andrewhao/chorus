@@ -6,7 +6,7 @@ Hendrix.SetListsCreateController = Ember.ObjectController.extend({
 
       // create a record and save it to the store
       var newSetList = this.store.createRecord('setList', this.get('model'));
-      newSet.save();
+      newSetList.save();
 
       // redirects to the song itself
       this.transitionToRoute('setList', newSetList);
