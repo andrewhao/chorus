@@ -1,10 +1,10 @@
-{{#link-to "sets.create" class="btn btn-primary create-btn"}} Add set {{/link-to}}
+{{#link-to "set_lists.create" class="btn btn-primary create-btn"}} Add set {{/link-to}}
 
 <div class="row">
   <div class="col-sm-3">
-    {{#each set in controller}}
+    {{#each setList in controller}}
       <p>
-        {{#link-to "set" set}}{{set.date}}{{/link-to}}
+        {{#link-to "set_list" setList}}{{setList.date}}{{/link-to}}
       </p>
     {{/each}}
   </div>

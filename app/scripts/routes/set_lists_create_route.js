@@ -4,7 +4,7 @@ Hendrix.SetListsCreateRoute = Ember.Route.extend({
   },
 
   renderTemplate: function() {
-    this.render('setList.edit', {
+    this.render('set_list.edit', {
       controller: "setListsCreate"
     });
   }
