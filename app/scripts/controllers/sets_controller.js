@@ -1,2 +1,2 @@
-Hendrix.SetsController = Ember.ArrayController.extend({
+Hendrix.SetListsController = Ember.ArrayController.extend({
 });

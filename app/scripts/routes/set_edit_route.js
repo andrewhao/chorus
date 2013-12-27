@@ -1,5 +1,5 @@
-Hendrix.SetEditRoute = Ember.Route.extend({
+Hendrix.SetListEditRoute = Ember.Route.extend({
   model: function() {
-    return this.modelFor('set');
+    return this.modelFor('setList');
   }
 });

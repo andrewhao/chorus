@@ -1,5 +1,5 @@
-Hendrix.SetsRoute = Ember.Route.extend({
+Hendrix.SetListsRoute = Ember.Route.extend({
   model: function() {
-    return this.store.find('set');
+    return this.store.find('setList');
   }
 });
