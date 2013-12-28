@@ -4,7 +4,7 @@ Hendrix.Song = DS.Model.extend({
   rawData: DS.attr(),
 
   // a song can belong to multiple sets
-  sets: DS.hasMany('set', {
+  setLists: DS.hasMany('setList', {
     async: true
   }),
 
@@ -24,17 +24,17 @@ Hendrix.Song.FIXTURES = [{
   title: "The Star Spangled Banner",
   key: "G",
   rawData: "G A C D\nOh say can you see",
-  sets: [1]
+  setLists: [1]
 }, {
   id: 2,
   title: "Little Wing",
   key: "G",
   rawData: "G A C D\nOohooooOoooooh",
-  sets: [1]
+  setLists: [1]
 }, {
   id: 3,
   title: "American Idiot",
   key: "G",
   rawData: "G A C D\nDon't wanna be an American idiot!",
-  sets: []
+  setLists: []
 }];
