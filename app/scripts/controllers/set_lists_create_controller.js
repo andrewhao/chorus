@@ -9,7 +9,7 @@ Hendrix.SetListsCreateController = Ember.ObjectController.extend({
       newSetList.save();
 
       // redirects to the song itself
-      this.transitionToRoute('setList', newSetList);
+      this.transitionToRoute('set_list', newSetList);
     }
   }
 });

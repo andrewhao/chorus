@@ -5,7 +5,7 @@ $.ajaxSetup({
   }
 });
 Hendrix.Store = DS.Store.extend();
-Hendrix.ApplicationAdapter = DS.RESTAdapter.extend({
+Hendrix.ApplicationAdapter = DS.ActiveModelAdapter.extend({
   host: "http://localhost:3000",
   // Force ember-data to append the `json` suffix
   buildURL: function(record, suffix) {

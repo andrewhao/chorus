@@ -5,7 +5,7 @@ Hendrix.SetListEditController = Ember.ObjectController.extend({
       // this will tell Ember-Data to save/persist the new record
       setList.save();
       // then transition to the current user
-      this.transitionToRoute('setList', setList);
+      this.transitionToRoute('set_list', setList);
     }
   }
 });
