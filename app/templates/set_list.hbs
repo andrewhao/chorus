@@ -1,5 +1,8 @@
 <h2>Set List: {{title}}</h2>
 
+<button {{action "edit"}}>Edit</button>
+<button {{action "delete"}}>Delete</button>
+
 <h3>Songs</h3>
 {{#each song in controller.songs}}
   {{render "song.index" song}}
