@@ -4,6 +4,6 @@ Hendrix.SongRoute = Ember.Route.extend({
   },
   setupController: function(controller, model) {
     controller.set("content", model);
-    controller.set('sets', this.store.find('set'));
+    controller.set('setLists', this.store.find('setList'));
   }
 });

@@ -1,6 +1,8 @@
 Hendrix
 =======
 
+[![Code Climate](https://codeclimate.com/github/andrewhao/hendrix.png)](https://codeclimate.com/github/andrewhao/hendrix)
+
 Keep those tabs and chords handy, organized, and purty.
 
 Here's the idea:

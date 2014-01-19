@@ -6,10 +6,10 @@
 {{#if unbelongingSets}}
 <ul class="song-set list-inline">
   Also appears in the following sets:
-  {{#each set in unbelongingSets}}
+  {{#each setList in unbelongingSets}}
     <li>
-    {{#link-to 'set.index' set}}
-      {{set.title}}
+    {{#link-to 'set_list.index' setList}}
+      {{setList.title}}
     {{/link-to}}
     </li>
   {{/each}}
