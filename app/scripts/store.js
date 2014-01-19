@@ -11,7 +11,7 @@ Hendrix.ApplicationAdapter = DS.ActiveModelAdapter.extend({
   buildURL: function(record, suffix) {
     return this._super(record, suffix) + ".json";
   }
-})
+});
 //Hendrix.ApplicationAdapter = DS.FixtureAdapter;
 // Hendrix.ApplicationAdapter = DS.LSAdapter.extend({
 //   namespace: 'hendrix'
