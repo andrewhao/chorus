@@ -10,5 +10,11 @@ Hendrix.SetListController = Ember.ObjectController.extend({
       // then transition to the users route
       this.transitionToRoute('set_lists');
     }
-  }
+  },
+
+  allSongs: function() {
+    return this.get('controllers.songs')
+  }.property('model.allSongs'),
+
+  needs: ['songs']
 });

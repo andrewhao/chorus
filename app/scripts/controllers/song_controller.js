@@ -10,6 +10,5 @@ Hendrix.SongController = Ember.ObjectController.extend({
       // then transition to the users route
       this.transitionToRoute('songs');
     }
-  },
-
+  }
 });
