@@ -3,6 +3,7 @@ Hendrix.SetListController = Ember.ObjectController.extend({
     edit: function() {
       this.transitionToRoute('set_list.edit');
     },
+
     delete: function() {
       // this tells Ember-Data to delete the current user
       this.get('model').deleteRecord();
@@ -12,9 +13,7 @@ Hendrix.SetListController = Ember.ObjectController.extend({
     }
   },
 
-  allSongs: function() {
-    return this.get('controllers.songs')
-  }.property('model.allSongs'),
+  songsController: Ember.computed.alias("controllers.songs"),
 
-  needs: ['songs']
+  needs: 'songs'
 });
