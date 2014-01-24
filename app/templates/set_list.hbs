@@ -4,3 +4,9 @@
 {{#each song in controller.songs}}
   {{render "song.index" song}}
 {{/each}}
+
+<h3>Add songs</h3>
+{{  view Ember.Select
+    content=songsController
+    optionValuePath="content.id"
+    optionLabelPath="content.title" }}

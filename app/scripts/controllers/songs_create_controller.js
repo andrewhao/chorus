@@ -6,6 +6,8 @@ Hendrix.SongsCreateController = Ember.ObjectController.extend({
 
       // create a record and save it to the store
       var newSong = this.store.createRecord('song', this.get('model'));
+
+      // TODO/ahao should this transition ony after the save transition completes?
       newSong.save();
 
       // redirects to the song itself
