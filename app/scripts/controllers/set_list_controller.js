@@ -14,6 +14,5 @@ Hendrix.SetListController = Ember.ObjectController.extend({
   },
 
   songsController: Ember.computed.alias("controllers.songs"),
-
-  needs: 'songs'
+  needs: ['songs']
 });

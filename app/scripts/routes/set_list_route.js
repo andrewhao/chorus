@@ -5,6 +5,6 @@ Hendrix.SetListRoute = Ember.Route.extend({
 
   setupController: function(controller, model) {
     controller.set('model', model);
-    this.controllerFor("songs").set('model', this.store.find("songs"));
+    this.controllerFor("songs").set('model', this.store.find("song"));
   }
 });
