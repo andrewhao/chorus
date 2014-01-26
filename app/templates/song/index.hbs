@@ -1,7 +1,18 @@
-<div class="song" {{bind-attr data-key=key}}>
-  <div class="hgroup clearfix">
-    <h2>{{title}}</h2>
-    <h3>{{key}}</h3>
-  </div>
-  <pre class="raw-chord-text" {{bind-attr data-key=key}}>{{text}}</pre>
-</div>
+{{outlet}}
+<button class="action-transpose">Transpose</button>
+<button {{action "edit"}}>Edit</button>
+<button {{action "delete"}}>Delete</button>
+
+{{#if unbelongingSets}}
+<ul class="song-set list-inline">
+  Also appears in the following sets:
+  {{#each setList in unbelongingSets}}
+    <li>
+    {{#link-to 'set_list.index' setList}}
+      {{setList.title}}
+    {{/link-to}}
+    </li>
+  {{/each}}
+  </small>
+</ul>
+{{/if}}
