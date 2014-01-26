@@ -1,0 +1,51 @@
+@import "bootstrap-sass/lib/bootstrap";
+
+/* Put your CSS here */
+html, body {
+    margin: 30px 0;
+}
+
+.transpose-keys {
+  a {
+    display: inline-block;
+    margin-right: 5px;
+    &.selected {
+      font-weight: bold;
+    }
+  }
+}
+div.hgroup {
+  clear: both;
+  h2 {
+    float: left
+  }
+  h3 {
+    float: right;
+  }
+}
+pre {
+  background-color: #FFF;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: #FAFAFA;
+    border: 1px solid #EEE;
+  }
+}
+
+#edit-song {
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  input, textarea {
+    width: 100%;
+    padding: .5em;
+    margin: 5px 0;
+  }
+
+  textarea {
+    height: 50em;
+    width: 100%;
+    font-family: monospace;
+  }
+}
