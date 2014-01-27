@@ -1,11 +1,11 @@
 var SongsCreateRoute = Ember.Route.extend({
   model: function() {
-    return Ember.Object.create();
+    return this.store.createRecord('song');
   },
 
   renderTemplate: function() {
     this.render('song.edit', {
-      controller: "songsCreate"
+      controller: "songs.create"
     });
   }
 });

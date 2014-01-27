@@ -1,8 +1,7 @@
 var SongIndexController = Ember.ObjectController.extend({
   text: function() {
-    return "some song stuff goes here.";
-  }.property()
+    return this.get('rawText');
+  }.property('rawText')
 });
 
 export default SongIndexController;
-
