@@ -1,6 +1,6 @@
 var SetListIndexRoute = Ember.Route.extend({
   model: function(params) {
-    return this.store.find('set_list', 1);
+    return this.modelFor('setList')
   },
 
   setupController: function(controller, model) {

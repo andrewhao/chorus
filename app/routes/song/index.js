@@ -1,8 +1,6 @@
 var SongIndexRoute = Ember.Route.extend({
   model: function(params) {
-    console.log("params!")
-    console.log(params)
-    return this.store.find('song', 1);
+    return this.modelFor('song')
   },
 
   setupController: function(controller, model) {
