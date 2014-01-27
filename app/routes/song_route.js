@@ -1,4 +1,4 @@
-var SongRoute = Ember.Route.extend({
+var SongIndexRoute = Ember.Route.extend({
   model: function(params) {
     return this.store.find('song', params.song_id);
   },
@@ -9,4 +9,4 @@ var SongRoute = Ember.Route.extend({
   }
 });
 
-export default SongRoute;
+export default SongIndexRoute;

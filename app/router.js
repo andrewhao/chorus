@@ -7,7 +7,6 @@ Router.map(function() {
       this.route('lyrics');
       this.resource("sets");
     });
-    this.route('detail');
     this.route('create');
   });
 
