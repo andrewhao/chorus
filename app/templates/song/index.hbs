@@ -1,7 +1,16 @@
-<div class="song" {{bind-attr data-key=key}}>
-  <div class="hgroup clearfix">
-    <h2>{{title}}</h2>
-    <h3>{{key}}</h3>
+<div class="song">
+  <div class="song" {{bind-attr data-key=key}}>
+    <div class="hgroup clearfix">
+      <h2>{{title}}</h2>
+      <h3>{{key}}</h3>
+    </div>
+    <pre class="raw-chord-text" {{bind-attr data-key=key}}>{{text}}</pre>
   </div>
-  <pre class="raw-chord-text" {{bind-attr data-key=key}}>{{text}}</pre>
+
+  <button class="action-transpose">Transpose</button>
+  <button {{action "edit"}}>Edit</button>
+  <button {{action "delete"}}>Delete</button>
 </div>
+
+
+
