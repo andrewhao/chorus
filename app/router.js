@@ -5,7 +5,6 @@ Router.map(function() {
     this.resource("song", {path: '/:song_id'}, function() {
       this.route('edit');
       this.route('lyrics');
-      this.resource("sets");
     });
     this.route('create');
   });
