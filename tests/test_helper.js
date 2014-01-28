@@ -22,7 +22,6 @@ function strictEqual(actual, expected, message) {
   message = getAssertionMessage(actual, expected, message);
   QUnit.strictEqual.call(this, actual, expected, message);
 }
-
 window.exists = exists;
 window.equal = equal;
 window.strictEqual = strictEqual;

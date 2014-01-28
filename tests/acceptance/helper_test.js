@@ -9,11 +9,4 @@ module("Acceptances - Helper", {
   }
 });
 
-test("helper output is rendered", function(){
-  expect(1);
-
-  visit('/helper-test').then(function(){
-    ok(exists("h3:contains('My name is Ember.')"));
-  });
-});
 
