@@ -5,7 +5,7 @@ var SetListsCreateRoute = Ember.Route.extend({
 
   renderTemplate: function() {
     this.render('set_list.edit', {
-      controller: "setListsCreate"
+      controller: "set_lists.create"
     });
   }
 });

@@ -4,8 +4,16 @@ var SetListIndexController = Ember.ObjectController.extend({
   actions: {
     addSong: function() {
       var songId = this.selectedNewSong;
-      
-      debugger;
+      var song = this.store.find('song', songId).then(function(song) {
+        debugger;
+        this.get('model').get('songs').push(song);
+      });
+    },
+
+    delete: function() {
+      this.get('model').deleteRecord();
+      this.get('model').save();
+      this.transitionToRoute('set_lists');
     }
   },
   // The new song chosen in the select dropdown.
