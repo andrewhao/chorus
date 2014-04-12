@@ -4,8 +4,6 @@ var SetListIndexController = Ember.ObjectController.extend({
   actions: {
     addSong: function() {
       var songId = this.selectedNewSong;
-      
-      debugger;
     }
   },
   // The new song chosen in the select dropdown.

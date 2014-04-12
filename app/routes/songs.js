@@ -25,7 +25,7 @@ var SongsRoute = Ember.Route.extend({
       model.deleteRecord();
       model.save().then(function() {
         controller.transitionToRoute('songs');
-      })
+      });
     }
   }
 
