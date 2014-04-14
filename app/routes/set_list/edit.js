@@ -1,6 +1,7 @@
 var SetListEditRoute = Ember.Route.extend({
   model: function() {
-    return this.modelFor('setList');
+    var sl = this.modelFor('setList');
+    return sl
   }
 });
 

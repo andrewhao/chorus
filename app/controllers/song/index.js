@@ -1,10 +1,6 @@
 var SongIndexController = Ember.ObjectController.extend({
   needs: ['song'],
   actions: {
-    edit: function() {
-      this.transitionToRoute('song.edit', this);
-    },
-
     delete: function() {
       // this tells Ember-Data to delete the current user
       var model = this.get("model");
