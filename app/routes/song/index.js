@@ -1,11 +1,9 @@
 var SongIndexRoute = Ember.Route.extend({
   model: function(params) {
-    return this.modelFor('song')
-  },
-
-  setupController: function(controller, model) {
-    controller.set("model", model);
-  }
+    var song = this.modelFor('song');
+    console.log(song);
+    return song;
+ }
 });
 
 export default SongIndexRoute;

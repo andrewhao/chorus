@@ -7,9 +7,9 @@
     <pre class="raw-chord-text" {{bind-attr data-key=key}}>{{text}}</pre>
   </div>
 
-  <button class="action-transpose">Transpose</button>
-  <button {{action "edit"}}>Edit</button>
-  <button {{action "delete"}}>Delete</button>
+  <button class="action-transpose btn btn-default">Transpose</button>
+  {{#link-to "song.edit" controller.model class="btn btn-default"}}Edit{{/link-to}}
+  <button class="btn btn-danger btn-xs" {{action "delete"}}>Delete</button>
 </div>
 
 
