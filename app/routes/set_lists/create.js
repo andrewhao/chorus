@@ -1,6 +1,6 @@
 var SetListsCreateRoute = Ember.Route.extend({
   model: function() {
-    return Ember.Object.create();
+    return this.store.createRecord('setList');
   },
 
   renderTemplate: function() {

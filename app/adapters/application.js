@@ -1,5 +1,6 @@
 var ApplicationAdapter = DS.ActiveModelAdapter.extend({
-  host: "http://hendrixapp.herokuapp.com",
+  host: "http://localhost:3000",
+  //host: "http://hendrixapp.herokuapp.com",
   // Force ember-data to append the `json` suffix
   buildURL: function(record, suffix) {
     return this._super(record, suffix) + ".json";
