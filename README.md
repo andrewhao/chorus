@@ -5,6 +5,8 @@ Sheet management software custom built for live performance of songs written as 
 
 Optimized for display on iPad.
 
+[![Chorus - the Music Management library by Andrew Hao, on Flickr](https://farm6.staticflickr.com/5492/14178173657_1af08d7e30_n.jpg)](https://www.flickr.com/photos/andrewhao/14178173657/)
+
 ## Install
 
     $ npm install
